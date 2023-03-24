@@ -1,0 +1,91 @@
+:root {
+    --li: 2ch;
+    --pad: 6vw;
+    --b: rgba(0, 0, 0, .9);
+    --w: rgba(255, 255, 255, .9);
+    --bg: red;
+    --maxw: 36ch;
+}
+
+@font-face {
+    font-family: vga;
+    src: url(vga.woff);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+}
+
+body {
+    font-size: xx-large;
+    width: 100%;
+    color: var(--b);
+    line-height: var(--li);
+}
+
+body,
+.cart-button,
+.active {
+    background-color: var(--bg)
+}
+
+button, h1, input {
+    all: unset;
+}
+
+
+
+
+
+.line {
+    width: 100%;
+    height: var(--li);
+    margin: auto;
+    padding: 0 var(--li);
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.line > * {
+    float: right;
+    padding-left: 1ch;
+}
+
+h1 {
+    flex-grow: 1;
+}
+
+
+.cart-wrap {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: transform 1s;
+    background: var(--bg);
+    transform: translate(0, calc(-1 * var(--li)));
+}
+
+
+
+
+.hidden,
+.qty,
+.cart-line {
+    display: none;
+}
+
+.cart-line.added {
+    display: inherit;
+}
+
+.added>.toggle {
+    color: var(--w);
+}
+
+.expanded {
+    height: auto;
+    word-break: break-word;
+}
