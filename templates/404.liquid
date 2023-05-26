@@ -87,7 +87,7 @@
       <div class="block">
         <form action="{{ shop.url }}/search" method="get" accept-charset="utf-8">
           <p>Maybe you want to try the search instead?</p>
-          <input type="text" name="q" value="{% if handle %}{{ handle }}{% else %}Search...{% endif %}" onfocus="if(this.value == 'Search...') { this.value = '' }" />
+          <input type="text" name="q" value="{% if handle %}{{ handle | escape }}{% else %}Search...{% endif %}" onfocus="if(this.value == 'Search...') { this.value = '' }" />
           <input type="submit" value="Search"/>
         </form>
       </div>
