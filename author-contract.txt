@@ -1,8 +1,9 @@
-Gaze Books, LLC  Author Contract  02/03/2024
+Gaze Author Contract 
+02/03/2024 
 
-I allow gaze to print copies of my book on my behalf. 
-I allow gaze to sell and distribute such copies. 
+I allow Gaze to print copies of my book. 
+I allow Gaze to sell and distribute such copies. 
 I can revoke these allowances at any time. 
-Gaze will pay me 50% of the net profit of each book of mine it sells.
+When Gaze sells a copy of my book it will pay me 50% of the net profit.
 Net profit = cover price - costs.
 Costs = paper + ink + shipping + tax + Stripe fee (for online sales) + discounts (for sales to retailers and distributors) + traveling (for sales at book fairs).
